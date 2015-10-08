@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+  </head>
+  <body ng-app="calc" ng-controller="CalcCtrl">
+
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Calculator</h1>
+      </ion-header-bar>
+      <ion-content>
+        <ion-list>
+          <div class="row">
+            <label class="item-input-wrapper text-input">
+              <div class="text-input">
+                <input class="text-field text-input" type="text" ng-model="calc.output" autofocus>
+              </div>
+            </label>
+          </div>
+          <div class="row">
+            <div class="col col-25">
+              <button class="button button-block button-dark" ng-click='update(1)'>1</button>
+            </div>
+            <div class="col col-25">
+              <button class="button button-block button-dark" ng-click='update(2)'>2</button>
+            </div>
+            <div class="col col-25">
+              <button class="button button-block button-dark" ng-click='update(3)'>3</button>
+            </div>
+            <div class="col col-25">
+              <button class="button button-block button-dark" ng-click='set("add")'>+</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-25">
+              <button class="button button-block button-dark" ng-click='update(4)'>4</button>
+            </div>
+            <div class="col col-25">
+              <button class="button button-block button-dark" ng-click='update(5)'>5</button>
+            </div>
+            <div class="col col-25">
+              <button class="button button-block button-dark" ng-click='update(6)'>6</button>
+            </div>
+            <div class="col col-25">
+              <button class="button button-block button-dark" ng-click='set("subtract")'>-</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-25">
+              <button class="button button-block button-dark" ng-click='update(7)'>7</button>
+            </div>
+            <div class="col col-25">
+              <button class="button button-block button-dark" ng-click='update(8)'>8</button>
+            </div>
+            <div class="col col-25">
+              <button class="button button-block button-dark" ng-click='update(9)'>9</button>
+            </div>
+            <div class="col col-25">
+              <button class="button button-block button-dark" ng-click='set("multiply")'>x</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-25">
+              <button class="button button-block button-dark" ng-click='clear()'>AC</button>
+            </div>
+            <div class="col col-25">
+              <button class="button button-block button-dark" ng-click='update(0)'>0</button>
+            </div>
+            <div class="col col-25">
+              <button class="button button-block button-dark" ng-click='set("divide")'>/</button>
+            </div>
+            <div class="col col-25">
+              <button class="button button-block button-dark" ng-click='calculate()'>=</button>
+            </div>
+          </div>
+        </ion-list>
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>

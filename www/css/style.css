@@ -1,0 +1,10 @@
+.text-input {
+  display: inline-flex;
+  width: 100%;
+  background-color: #f4f4f4;
+}
+
+input {
+  text-align: right;
+  float: right;
+}
