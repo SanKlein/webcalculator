@@ -18,9 +18,6 @@
   <body ng-app="calc" ng-controller="CalcCtrl">
 
     <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Calculator</h1>
-      </ion-header-bar>
       <ion-content>
         <ion-list>
           <div class="row">
@@ -32,58 +29,69 @@
           </div>
           <div class="row">
             <div class="col col-25">
-              <button class="button button-block button-dark" ng-click='update(1)'>1</button>
+              <button class="button button-block button-stable" ng-click='clear()'>AC</button>
             </div>
             <div class="col col-25">
-              <button class="button button-block button-dark" ng-click='update(2)'>2</button>
+              <button class="button button-block button-stable" ng-click="change()">+/-</button>
             </div>
             <div class="col col-25">
-              <button class="button button-block button-dark" ng-click='update(3)'>3</button>
+              <button class="button button-block button-stable" ng-click="percent()">%</button>
             </div>
             <div class="col col-25">
-              <button class="button button-block button-dark" ng-click='set("add")'>+</button>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col col-25">
-              <button class="button button-block button-dark" ng-click='update(4)'>4</button>
-            </div>
-            <div class="col col-25">
-              <button class="button button-block button-dark" ng-click='update(5)'>5</button>
-            </div>
-            <div class="col col-25">
-              <button class="button button-block button-dark" ng-click='update(6)'>6</button>
-            </div>
-            <div class="col col-25">
-              <button class="button button-block button-dark" ng-click='set("subtract")'>-</button>
+              <button class="button button-block operator" ng-click='set("divide")'>/</button>
             </div>
           </div>
           <div class="row">
             <div class="col col-25">
-              <button class="button button-block button-dark" ng-click='update(7)'>7</button>
+              <button class="button button-block button-light" ng-click='update("7")'>7</button>
             </div>
             <div class="col col-25">
-              <button class="button button-block button-dark" ng-click='update(8)'>8</button>
+              <button class="button button-block button-light" ng-click='update("8")'>8</button>
             </div>
             <div class="col col-25">
-              <button class="button button-block button-dark" ng-click='update(9)'>9</button>
+              <button class="button button-block button-light" ng-click='update("9")'>9</button>
             </div>
             <div class="col col-25">
-              <button class="button button-block button-dark" ng-click='set("multiply")'>x</button>
+              <button class="button button-block operator" ng-click='set("multiply")'>x</button>
             </div>
           </div>
           <div class="row">
             <div class="col col-25">
-              <button class="button button-block button-dark" ng-click='clear()'>AC</button>
+              <button class="button button-block button-light" ng-click='update("4")'>4</button>
             </div>
             <div class="col col-25">
-              <button class="button button-block button-dark" ng-click='update(0)'>0</button>
+              <button class="button button-block button-light" ng-click='update("5")'>5</button>
             </div>
             <div class="col col-25">
-              <button class="button button-block button-dark" ng-click='set("divide")'>/</button>
+              <button class="button button-block button-light" ng-click='update("6")'>6</button>
             </div>
             <div class="col col-25">
-              <button class="button button-block button-dark" ng-click='calculate()'>=</button>
+              <button class="button button-block operator" ng-click='set("subtract")'>-</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-25">
+              <button class="button button-block button-light" ng-click='update("1")'>1</button>
+            </div>
+            <div class="col col-25">
+              <button class="button button-block button-light" ng-click='update("2")'>2</button>
+            </div>
+            <div class="col col-25">
+              <button class="button button-block button-light" ng-click='update("3")'>3</button>
+            </div>
+            <div class="col col-25">
+              <button class="button button-block operator" ng-click='set("add")'>+</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-50">
+              <button class="button button-block button-light" ng-click='update("0")'>0</button>
+            </div>
+            <div class="col col-25">
+              <button class="button button-block button-light" ng-click='decimal()'>.</button>
+            </div>
+            <div class="col col-25">
+              <button class="button button-block operator" ng-click='calculate()'>=</button>
             </div>
           </div>
         </ion-list>
