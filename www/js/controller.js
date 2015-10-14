@@ -1,7 +1,10 @@
 angular.module('calc.controller', [])
   // this controller looks over the whole app
-  .controller('CalcCtrl', ['$scope',
-    function($scope) {
+  .controller('CalcCtrl', ['$scope', '$window',
+    function($scope, $window) {
+
+      $window.localStorage['mem'] = 0;
+
       $scope.calc = {
         output: "0",
         total: "0",
@@ -117,6 +120,24 @@ angular.module('calc.controller', [])
           var result = String(number);
           $scope.calc.output = result;
         }
+      };
+
+      $scope.memClear = function() {
+        $window.localStorage['mem'] = '0';
+      };
+
+      $scope.memAdd = function() {
+        $window.localStorage['mem'] = String(parseFloat($window.localStorage['mem']) + parseFloat($scope.calc.output));
+        $scope.calc.output = $window.localStorage['mem'];
+      };
+
+      $scope.memSub = function() {
+        $window.localStorage['mem'] = String(parseFloat($window.localStorage['mem']) - parseFloat($scope.calc.output));
+        $scope.calc.output = $window.localStorage['mem'];
+      };
+
+      $scope.memCall = function() {
+        $scope.calc.output = $window.localStorage['mem'];
       };
     }
   ]);

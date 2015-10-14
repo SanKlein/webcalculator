@@ -21,78 +21,122 @@
       <ion-content>
         <ion-list>
           <div class="row">
-            <label class="item-input-wrapper text-input">
-              <div class="text-input">
-                <input class="text-field text-input" type="text" ng-model="calc.output" autofocus>
-              </div>
-            </label>
+            <div class="col col-20"></div>
+            <div class="col col-10"></div>
+            <div class="col col">
+              <label class="item-input-wrapper text-input">
+                <div class="text-input">
+                  <input class="text-field text-input" type="text" ng-model="calc.output" autofocus>
+                </div>
+              </label>
+            </div>
+            <div class="col col-20"></div>
+            <div class="col col-10"></div>
           </div>
           <div class="row">
-            <div class="col col-25">
-              <button class="button button-block button-stable" ng-click='clear()'>AC</button>
+            <div class="col col-20"></div>
+            <div class="col col-10"></div>
+            <div class="col col-10">
+              <button class="button button-block mem icon" ng-click='memClear()'>MC</button>
             </div>
-            <div class="col col-25">
-              <button class="button button-block button-stable" ng-click="change()">+/-</button>
+            <div class="col col-10">
+              <button class="button button-block mem icon" ng-click='memAdd()'>M+</button>
             </div>
-            <div class="col col-25">
-              <button class="button button-block button-stable" ng-click="percent()">%</button>
+            <div class="col col-10">
+              <button class="button button-block mem icon" ng-click='memSub()'>M-</button>
             </div>
-            <div class="col col-25">
-              <button class="button button-block operator" ng-click='set("divide")'>/</button>
+            <div class="col col-10">
+              <button class="button button-block mem icon" ng-click='memCall()'>MR</button>
             </div>
+            <div class="col col-20"></div>
+            <div class="col col-10"></div>
           </div>
           <div class="row">
-            <div class="col col-25">
-              <button class="button button-block button-light" ng-click='update("7")'>7</button>
+            <div class="col col-20"></div>
+            <div class="col col-10"></div>
+            <div class="col col-10">
+              <button class="button button-block button-stable icon" ng-click='clear()'>AC</button>
             </div>
-            <div class="col col-25">
-              <button class="button button-block button-light" ng-click='update("8")'>8</button>
+            <div class="col col-10">
+              <button class="button button-block button-stable icon" ng-click="change()">+/-</button>
             </div>
-            <div class="col col-25">
-              <button class="button button-block button-light" ng-click='update("9")'>9</button>
+            <div class="col col-10">
+              <button class="button button-block button-stable icon" ng-click="percent()">%</button>
             </div>
-            <div class="col col-25">
-              <button class="button button-block operator" ng-click='set("multiply")'>x</button>
+            <div class="col col-10">
+              <button class="button button-block operator icon" ng-click='set("divide")'>/</button>
             </div>
+            <div class="col col-20"></div>
+            <div class="col col-10"></div>
           </div>
           <div class="row">
-            <div class="col col-25">
-              <button class="button button-block button-light" ng-click='update("4")'>4</button>
+            <div class="col col-20"></div>
+            <div class="col col-10"></div>
+            <div class="col col-10">
+              <button class="button button-block button-light icon" ng-click='update("7")'>7</button>
             </div>
-            <div class="col col-25">
-              <button class="button button-block button-light" ng-click='update("5")'>5</button>
+            <div class="col col-10">
+              <button class="button button-block button-light icon" ng-click='update("8")'>8</button>
             </div>
-            <div class="col col-25">
-              <button class="button button-block button-light" ng-click='update("6")'>6</button>
+            <div class="col col-10">
+              <button class="button button-block button-light icon" ng-click='update("9")'>9</button>
             </div>
-            <div class="col col-25">
-              <button class="button button-block operator" ng-click='set("subtract")'>-</button>
+            <div class="col col-10">
+              <button class="button button-block operator icon" ng-click='set("multiply")'>x</button>
             </div>
+            <div class="col col-20"></div>
+            <div class="col col-10"></div>
           </div>
           <div class="row">
-            <div class="col col-25">
-              <button class="button button-block button-light" ng-click='update("1")'>1</button>
+            <div class="col col-20"></div>
+            <div class="col col-10"></div>
+            <div class="col col-10">
+              <button class="button button-block button-light icon" ng-click='update("4")'>4</button>
             </div>
-            <div class="col col-25">
-              <button class="button button-block button-light" ng-click='update("2")'>2</button>
+            <div class="col col-10">
+              <button class="button button-block button-light icon" ng-click='update("5")'>5</button>
             </div>
-            <div class="col col-25">
-              <button class="button button-block button-light" ng-click='update("3")'>3</button>
+            <div class="col col-10">
+              <button class="button button-block button-light icon" ng-click='update("6")'>6</button>
             </div>
-            <div class="col col-25">
-              <button class="button button-block operator" ng-click='set("add")'>+</button>
+            <div class="col col-10">
+              <button class="button button-block operator icon" ng-click='set("subtract")'>-</button>
             </div>
+            <div class="col col-20"></div>
+            <div class="col col-10"></div>
           </div>
           <div class="row">
-            <div class="col col-50">
-              <button class="button button-block button-light" ng-click='update("0")'>0</button>
+            <div class="col col-20"></div>
+            <div class="col col-10"></div>
+            <div class="col col-10">
+              <button class="button button-block button-light icon" ng-click='update("1")'>1</button>
             </div>
-            <div class="col col-25">
-              <button class="button button-block button-light" ng-click='decimal()'>.</button>
+            <div class="col col-10">
+              <button class="button button-block button-light icon" ng-click='update("2")'>2</button>
             </div>
-            <div class="col col-25">
-              <button class="button button-block operator" ng-click='calculate()'>=</button>
+            <div class="col col-10">
+              <button class="button button-block button-light icon" ng-click='update("3")'>3</button>
             </div>
+            <div class="col col-10">
+              <button class="button button-block operator icon" ng-click='set("add")'>+</button>
+            </div>
+            <div class="col col-20"></div>
+            <div class="col col-10"></div>
+          </div>
+          <div class="row">
+            <div class="col col-20"></div>
+            <div class="col col-10"></div>
+            <div class="col col-20">
+              <button class="button button-block button-light icon" ng-click='update("0")'>0</button>
+            </div>
+            <div class="col col-10">
+              <button class="button button-block button-light icon" ng-click='decimal()'>.</button>
+            </div>
+            <div class="col col-10">
+              <button class="button button-block operator icon" ng-click='calculate()'>=</button>
+            </div>
+            <div class="col col-20"></div>
+            <div class="col col-10"></div>
           </div>
         </ion-list>
       </ion-content>

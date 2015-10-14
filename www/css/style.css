@@ -43,6 +43,10 @@ button {
   background-color: orange;
 }
 
+.mem {
+  background-color: gray;
+}
+
 div {
   padding: 0;
 }
