@@ -6,7 +6,7 @@ Parker Klein - Developer
 
 ## Overview:
 Built a functional calculator using AngularJS, HTML, and CSS
-Wrote test suite using Mocha
+Wrote test suite using Karma
 Communication over text messages
 Met once on Thursday Oct 8th
 Met twice on Tuesday Oct 13th
@@ -15,3 +15,7 @@ Met twice on Tuesday Oct 13th
 Built program using JavaScript, HTML, and CSS
 Made changes to accommodate project lead
 Wrote tests for button functionality
+All JavaScript code in /www/js/.
+All CSS code in /www/css/style.css
+All HTML code in /www/index.html
+Test code in /test/test.js

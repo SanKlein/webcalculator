@@ -16,4 +16,4 @@ angular.module('calc', ['ionic', 'calc.controller'])
       StatusBar.styleDefault();
     }
   });
-})
+});
