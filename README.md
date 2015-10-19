@@ -19,3 +19,8 @@
 - All CSS code in /www/css/style.css
 - All HTML code in /www/index.html
 - Test code in /test/test.js
+
+## User Documentation:
+- installation: clone from github and then run 'npm install'
+- usage: run 'ionic serve' and then navigate to localhost:8100
+- testing: run 'karma start'
